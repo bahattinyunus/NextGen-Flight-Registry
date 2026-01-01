@@ -1,0 +1,37 @@
+id: bayraktar_tb3
+meta:
+  name: Bayraktar TB3
+  nato_reporting_name: N/A
+  manufacturer: Baykar Technologies
+  country: Turkiye
+  first_flight: 2023-10-27
+  role: Carrier-capable MALE UCAV
+  status: Prototype
+specs:
+  crew: "0"
+  length_m: 8.35
+  wingspan_m: 14.0
+  height_m: 2.6
+  empty_weight_kg: 800
+  max_takeoff_weight_kg: 1450
+  powerplant:
+    - name: TEI PD170
+      type: Turbodiesel
+      thrust_dry_kn: 0.0
+      thrust_afterburner_kn: 0.0
+performance:
+  max_speed_mach: 0.2
+  max_speed_kmh: 300
+  range_km: 1800
+  service_ceiling_m: 9100
+  g_limits: "N/A"
+avionics:
+  radar: Local SAR/GMTI
+  ew_suite: N/A
+armament:
+  hardpoints: 6
+  internal_bays: false
+  standard_loadout:
+    - MAM-L
+    - MAM-T
+    - Cirit

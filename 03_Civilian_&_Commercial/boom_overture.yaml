@@ -1,0 +1,34 @@
+id: boom_overture
+meta:
+  name: Overture
+  nato_reporting_name: N/A
+  manufacturer: Boom Supersonic
+  country: USA
+  first_flight: 2029-01-01
+  role: Supersonic Passenger Transport
+  status: Concept
+specs:
+  crew: "2"
+  length_m: 61.3
+  wingspan_m: 18.3
+  height_m: 10.5
+  empty_weight_kg: 0
+  max_takeoff_weight_kg: 77110
+  powerplant:
+    - name: Symphony
+      type: Medium-bypass Turbofan (Non-afterburning)
+      thrust_dry_kn: 155.0
+      thrust_afterburner_kn: 0.0
+performance:
+  max_speed_mach: 1.7
+  max_speed_kmh: 2083
+  range_km: 7871
+  service_ceiling_m: 18288
+  g_limits: "Commercial Standard"
+avionics:
+  radar: Weather Radar
+  ew_suite: N/A
+armament:
+  hardpoints: 0
+  internal_bays: false
+  standard_loadout: []

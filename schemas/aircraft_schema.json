@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Aircraft Data Schema",
+  "description": "Standardized schema for NextGen Flight Registry aircraft entries",
+  "type": "object",
+  "required": [
+    "id",
+    "meta",
+    "specs",
+    "performance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for the aircraft (e.g., f22_raptor)"
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "name",
+        "manufacturer",
+        "country",
+        "role",
+        "status"
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "nato_reporting_name": { "type": "string" },
+        "manufacturer": { "type": "string" },
+        "country": { "type": "string" },
+        "first_flight": { "type": "string", "format": "date" },
+        "role": { "type": "string" },
+        "status": { "type": "string", "enum": ["In Service", "Development", "Retired", "Prototype", "Concept"] }
+      }
+    },
+    "specs": {
+      "type": "object",
+      "properties": {
+        "crew": { "type": "string" },
+        "length_m": { "type": "number" },
+        "wingspan_m": { "type": "number" },
+        "height_m": { "type": "number" },
+        "empty_weight_kg": { "type": "integer" },
+        "max_takeoff_weight_kg": { "type": "integer" },
+        "powerplant": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "type": { "type": "string" },
+              "thrust_dry_kn": { "type": "number" },
+              "thrust_afterburner_kn": { "type": "number" }
+            }
+          }
+        }
+      }
+    },
+    "performance": {
+      "type": "object",
+      "properties": {
+        "max_speed_mach": { "type": "number" },
+        "max_speed_kmh": { "type": "integer" },
+        "range_km": { "type": "integer" },
+        "service_ceiling_m": { "type": "integer" },
+        "g_limits": { "type": "string" }
+      }
+    },
+    "avionics": {
+      "type": "object",
+      "properties": {
+        "radar": { "type": "string" },
+        "ew_suite": { "type": "string" }
+      }
+    },
+    "armament": {
+      "type": "object",
+      "properties": {
+        "hardpoints": { "type": "integer" },
+        "internal_bays": { "type": "boolean" },
+        "standard_loadout": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

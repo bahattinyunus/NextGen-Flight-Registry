@@ -1,0 +1,37 @@
+id: f22_raptor
+meta:
+  name: F-22 Raptor
+  nato_reporting_name: Raptor
+  manufacturer: Lockheed Martin Aeronautics
+  country: USA
+  first_flight: 1997-09-07
+  role: Air Superiority Fighter
+  status: In Service
+specs:
+  crew: "1"
+  length_m: 18.92
+  wingspan_m: 13.56
+  height_m: 5.08
+  empty_weight_kg: 19700
+  max_takeoff_weight_kg: 38000
+  powerplant:
+    - name: F119-PW-100
+      type: Pitch Thrust Vectoring Turbofan
+      thrust_dry_kn: 116.0
+      thrust_afterburner_kn: 156.0
+performance:
+  max_speed_mach: 2.25
+  max_speed_kmh: 2414
+  range_km: 2960
+  service_ceiling_m: 20000
+  g_limits: "+9.0 / -3.0"
+avionics:
+  radar: AN/APG-77 AESA
+  ew_suite: AN/ALR-94
+armament:
+  hardpoints: 4
+  internal_bays: true
+  standard_loadout:
+    - AIM-120D AMRAAM
+    - AIM-9X Sidewinder
+    - GBU-32 JDAM

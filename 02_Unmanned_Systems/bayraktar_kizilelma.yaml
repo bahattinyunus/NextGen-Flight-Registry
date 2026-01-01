@@ -1,0 +1,38 @@
+id: bayraktar_kizilelma
+meta:
+  name: Bayraktar Kızılelma
+  nato_reporting_name: N/A
+  manufacturer: Baykar Technologies
+  country: Turkiye
+  first_flight: 2022-12-14
+  role: Unmanned Fighter Aircraft (MIUS)
+  status: Prototype
+specs:
+  crew: "0 (Autonomous)"
+  length_m: 14.7
+  wingspan_m: 10.0
+  height_m: 3.3
+  empty_weight_kg: 4000
+  max_takeoff_weight_kg: 8500
+  powerplant:
+    - name: AI-25TLT / AI-322F
+      type: Turbofan
+      thrust_dry_kn: 16.9
+      thrust_afterburner_kn: 24.5
+performance:
+  max_speed_mach: 0.9
+  max_speed_kmh: 1100
+  range_km: 930
+  service_ceiling_m: 12000
+  g_limits: "+5.0 / -2.0"
+avionics:
+  radar: Aselsan MURAD AESA
+  ew_suite: Integrated EW System
+armament:
+  hardpoints: 2
+  internal_bays: true
+  standard_loadout:
+    - MAM-L
+    - MAM-C
+    - Bozdoğan
+    - SOM-J
